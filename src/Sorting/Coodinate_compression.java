@@ -24,7 +24,7 @@ public class Coodinate_compression {
         Arrays.sort(arr_sort); // 복사값만 정렬
         int rank = 0;
         for( int v : arr_sort){
-            if(!rankingmap.containsKey(v)){
+            if(!rankingmap.containsKey(v)){ //for문을 2번 돌리지 않아도 된다는 시간복잡도 방면 이득
                 rankingmap.put(v, rank);
                 rank++;
             }
