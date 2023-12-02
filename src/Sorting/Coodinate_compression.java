@@ -16,6 +16,8 @@ public class Coodinate_compression {
         int[] arr_sort = new int[num]; // sorted array
         
         HashMap<Integer, Integer> rankingmap = new HashMap<Integer, Integer>();
+
+        
         String[] line = br.readLine().split(" ");
         for (int i = 0; i < num; i++) {
             arr[i] = Integer.parseInt(line[i]);
