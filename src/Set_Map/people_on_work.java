@@ -39,13 +39,13 @@ public class people_on_work {
         int size = 0 ;
         int result_count =remain_people.size();
         String[] result = new String[result_count];
-        for(String temp : remain_people){
+        for(String temp : remain_people){   // arraylist 를 배열로 바꾸기 ++이 중요함. 
             result[size++] = temp;
         }
         Arrays.sort(result, new Comparator<String>() {
 
             @Override
-            public int compare(String o1, String o2) {
+            public int compare(String o1, String o2) {  //사전 역순으로 정렬 
                 //단어 길이가 같은 경우 소문자 먼저 
                 // if(o1.length() == o2.length()){
                 //     return o2.compareTo(o1);
